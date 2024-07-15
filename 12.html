@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12_Bootstrap_homework</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .navbar-custom {
+      background-color: rgba(0, 0, 0, 0.5); /* 黑色背景透明度為50% */
+      position: absolute;
+      width: 100%;
+      z-index: 10; /* 確保導航列在輪播圖上方 */
+    }
+
+    .carousel-item img {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover,
+    .carousel-control-prev:focus,
+    .carousel-control-next:focus {
+      background-color: transparent;
+    }
+
+    /* .card {
+      margin-bottom: 20px;
+    } */
+
+    .card-img-top {
+      width: 50% ; /* 圖片佔滿卡片的一半寬度 */
+      object-fit: cover;
+    } 
+
+    .row-text01 {
+      position: relative;
+      top: -8vh;
+      right: -22vw;
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">泰山咖啡莊園</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link active text-white" aria-current="page" href="#">菜單餐點</a>
+          <a class="nav-link text-white" href="#">周邊景點</a>
+          <a class="nav-link text-white" href="#">莊園位置</a>
+          <a class="nav-link text-white" href="#">聯絡我們</a>
+          <a class="nav-link text-white" href="#">咖啡故事</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/300/200/?random=1" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/300/200/?random=2" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/300/200/?random=3" class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <div class="container d-flex align-content-between flex-wrap m-auto p-5">
+    <div class="card mb-5 mr-4 mt-5" style="width: 20rem;">
+      <img src="https://picsum.photos/1920/1080/?random=4" class="card-img-top" style="width: 320px;">
+      <div class="card-body">
+        <h5>好好會員價體系發現。</h5>
+        <p class="card-text">成了日前部落格土地規劃大家興趣勞動始終目的一些充分，更新商標身上解決歌曲最高為主及時學歷多少免費，需求熱門轉貼，哪個下一頁為了年輕人重複，工資接收一面，明確一。</p>
+      </div>
+    </div>
+    <div class="card mb-5 mr-4 mt-5" style="width: 20rem;">
+      <img src="https://picsum.photos/1920/1080/?random=5" class="card-img-top" style="width: 320px;">
+      <div class="card-body">
+        <h5>好好會員價體系發現。</h5>
+        <p class="card-text">成了日前部落格土地規劃大家興趣勞動始終目的一些充分，更新商標身上解決歌曲最高為主及時學歷多少免費，需求熱門轉貼，哪個下一頁為了年輕人重複，工資接收一面，明確一。</p>
+      </div>
+    </div>
+    <div class="card mb-5 mt-5" style="width: 20rem;">
+      <img src="https://picsum.photos/1920/1080/?random=6" class="card-img-top" style="width: 320px;">
+      <div class="card-body">
+        <h5>好好會員價體系發現。</h5>
+        <p class="card-text">成了日前部落格土地規劃大家興趣勞動始終目的一些充分，更新商標身上解決歌曲最高為主及時學歷多少免費，需求熱門轉貼，哪個下一頁為了年輕人重複，工資接收一面，明確一。</p>
+      </div>
+    </div>
+  </div>
+
+  <!--   height: 600px;  height: 599px;-->
+
+  <div class="card" style="width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-8" style="width: 100%;">
+        <img src="https://picsum.photos/1920/1080/?random=7" class="img-fluid rounded-start" style="height: 600px;">
+      </div>
+      <div class="col-md-4" style="margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: 4rem; text-align: center;">Coffee Shop</h5>
+          <p class="card-text" style="text-align: center; line-height: 2rem;">一體期限經歷各個你知道電視劇是啊這麼必須，即使一場歐美民眾適當經典比較策劃，剛剛大多一口結構密碼線路藍色，長度依舊一般可以說臨床點點監督控制，信心附件寬頻基本一週計算和我帶著你能顏色我去，比較一切，裝修機會未來屏幕僅僅研發瘋狂戰士這樣團隊，用於大廈，希望。</p>
+          <div style="text-align: center;"><button style="width: 190px; height: 40px; background-color: rgb(27, 168, 27); border-radius: 10%; border: none; color: white;">VIEW COLLECTION</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="width: 100%;">
+    <div class="row g-0">
+      
+      <div class="col-md-4" style="margin: auto;">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: 4rem; text-align: center;">Coffee Shop</h5>
+          <p class="card-text" style="text-align: center; line-height: 2rem;">一體期限經歷各個你知道電視劇是啊這麼必須，即使一場歐美民眾適當經典比較策劃，剛剛大多一口結構密碼線路藍色，長度依舊一般可以說臨床點點監督控制，信心附件寬頻基本一週計算和我帶著你能顏色我去，比較一切，裝修機會未來屏幕僅僅研發瘋狂戰士這樣團隊，用於大廈，希望。</p>
+          <div style="text-align: center;"><button style="width: 190px; height: 40px; background-color: rgb(27, 168, 27); border-radius: 10%; border: none; color: white;">VIEW COLLECTION</button></div>
+        </div>
+      </div>
+      <div class="col-md-8" style="width: 100%;">
+        <img src="https://picsum.photos/1920/1080/?random=8" class="img-fluid rounded-start" style="height: 599px; margin-left: 12rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="vh-100">
+    <iframe class="h-100 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7023777147806!2d121.416871876079!3d25.0441724378805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bed3dc9b59%3A0x57e6439a2db0fa2a!2zMjQz5paw5YyX5biC5rOw5bGx5Y2A6LK05a2Q6YeM6Ie06YGg5paw5p2RNTXkuYsx6Jmf5rOw5bGx6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1717729138642!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="container01" style="background: #eee;">
+    <h1 style="text-align: center;">聯絡莊園</h1>
+    <h2 style="text-align: center;">泰山咖啡莊園，傳承熱情 coding 精神</h2>
+    <p style="text-align: center;">任何服務問題或建議，歡迎您透過客服表單告知我們，謝謝 !</p>
+    <div class="container02" style="width: 1000px; margin: auto;">
+    <div class="row g-3">
+      <div class="col">
+        <label for="inputName" class="form-label">姓名</label>
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="Text input with radio button">
+          <div class="input-group-text" style="width: 120px;">
+            <div style="position: relative; top: 0px; right: -16px;">先生</div>
+            <input class="form-check-input mt-0" type="radio" value="" style="margin-left: -0.25rem;">
+            <div style="position: relative; top: 0px; right: -38px;">女士</div>
+            <input class="form-check-input mt-0" style="position: relative; right:-8px" type="radio" value="" aria-label="Radio button for following text input">
+          </div>
+        </div>
+        
+      </div>
+      <div class="col">
+        <label for="inputPhone" class="form-label">電話</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">電子信箱</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputQuestionType" class="form-label">問題類型</label>
+        <div class="form-floating">
+          <select id="floatingSelect" class="form-select" style="width: 485px; height: 38px;">
+            <option selected>餐飲建議</option>
+            <option value="1">甜食</option>
+            <option value="2">飲料</option>
+            <option value="3">主食</option>
+          </select>
+        </div>
+      </div>
+      <div class="row g-3" style="width: 1080px; margin: auto;">
+        <div class="col-md-6">
+          <label for="inputOpnion" class="form-label">意見需求</label>
+          <textarea class="form-control" style="width: 1000px; height: 115px;"></textarea>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            訂閱泰山莊園最新資訊
+          </label>
+        </div>
+      </div>
+      <br>
+      <div class="col-12" style="text-align: center;">
+        <button type="submit" class="btn btn-secondary">送出</button>
+      </div>
+    </form>
+    <br>
+  </div>
+  </div>
+
+  <div id="footer" style="width: 100%; background: #0f0f0f;">
+    <img src="https://picsum.photos/300/200/?random=10" style="width: 155px; height: 155px; position: relative; right: -7%; border-radius: 50%;">
+    <!-- <div class="container"> -->
+      <div class="row row-text01">
+        <div class="col" style="color: white;">
+          <h6>Address</h6>
+          <p>1234 Street Name</p>
+          <p>City, AA 99999</p>
+        </div>
+        <div class="col order-5" style="color: white;">
+          <h6>Links</h6>
+          <p>Website builder</p>
+          <p>Download for Windows</p>
+          <p>Download for Mac</p>
+        </div>
+        <div class="col order-1" style="color: white;">
+          <h6>Contacts</h6>
+          <p>Email:support@mobirise.com</p>
+          <p>Phone: +1 (0) 000 0000 001</p>
+          <p>Fax: +1 (0) 000 0000 002</p>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js'></script
